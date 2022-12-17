@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Generator</title>
+    <script src="script.js"></script>
+</head>
+<body style="display: inline">
+<div style="float: left; width: 20%">
+    <label for="spriteSize">Sprite Size:</label>
+    <input type="number" id="spriteSize" value="3" min="1" onchange="process()"/>
+    <label for="outputText">Output text:</label>
+    <textarea id="outputText" onkeyup="process()"></textarea>
+    <p id="details"></p>
+    <pre>
+          <code style="display: inline-block;padding: 0;margin: 0" id="instructionsP"></code>
+      </pre>
+</div>
+<div style="float: left;width: 80%">
+        <pre>
+            <code style="display: inline-block;padding: 0;margin: 0" id="printout"></code>
+        </pre>
+</div>
+</body>
+</html>
